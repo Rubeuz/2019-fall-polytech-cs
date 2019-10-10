@@ -1,0 +1,9 @@
+print ("Введите слово")
+word=input()
+n=len(word)-1
+i=0
+while i<=(n//2):
+    if word[i]==word[n-i]: i+=1
+    else: break
+if i==n//2 or i==(n//2)+1: print ("Палиндром")
+else: print ("Не палиндром")
